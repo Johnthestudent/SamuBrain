@@ -79,17 +79,23 @@ class GameOfLife : public QThread
     int  numberOfNeighbors ( int **lattice, int r, int c, int s );
 
     void glider ( int **lattice, int x, int y );
+	void pulsar ( int **lattice, int x, int y );
     void car ( int **lattice, int x, int y );
     void man ( int **lattice, int x, int y );
     void house ( int **lattice, int x, int y );
+    void batman ( int **lattice, int x, int y );
 
     int carx {0};
     int manx {0};
     int housex {0};
+    int batmanx {0};
 
     void red ( int **lattice, int x, int y, int color );
+    void hello ( int **lattice, int x, int y, int color );
     void green ( int **lattice, int x, int y, int color );
+    void samu ( int **lattice, int x, int y, int color );
     void blue ( int **lattice, int x, int y, int color );
+    void brain ( int **lattice, int x, int y, int color );
 
     void clear_lattice ( int **nextLattice );
     void fill_lattice ( int **nextLattice, int color );
